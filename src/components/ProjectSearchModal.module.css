@@ -1,0 +1,67 @@
+.searchBarWrap {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.searchBtn {
+  min-width: 56px;
+}
+
+.projectListWrap {
+  max-height: 180px;
+  overflow-y: auto;
+  border: 1px solid #e3e6ea;
+  border-radius: 6px;
+  padding: 8px 6px;
+  margin-bottom: 12px;
+  background: #fafbfc;
+}
+
+.projectListItem {
+  margin-bottom: 4px;
+}
+
+.projectLabel {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.selectedListWrap {
+  margin-top: 8px;
+}
+.selectedListTitle {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.selectedList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.selectedItem {
+  display: flex;
+  align-items: center;
+  background: #f0f6ff;
+  border-radius: 16px;
+  padding: 2px 10px 2px 6px;
+  font-size: 13px;
+  border: 1px solid #b6d4fe;
+}
+.selectedIcon {
+  margin-right: 4px;
+  font-size: 15px;
+}
+.selectedName {
+  margin-right: 4px;
+}
+.removeBtn {
+  color: #888;
+  font-size: 13px;
+  padding: 0 2px;
+  margin-left: 2px;
+}
+.removeBtn:disabled {
+  color: #bbb;
+} 

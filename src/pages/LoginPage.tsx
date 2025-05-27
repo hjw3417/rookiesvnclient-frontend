@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
-import { login } from '../api/authApi';
+import { useNavigate } from 'react-router-dom';
+import { login } from '../services/authService';
 
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const token = await login({ username, password });
+      const token = await login(username, password);
       localStorage.setItem('jwt', token);
-      // TODO: 로그인 후 페이지 이동 로직 추가
       alert('로그인 성공');
+      navigate('/main');
     } catch (err) {
       setError('로그인 실패: 아이디/비밀번호를 확인하세요');
+      alert('로그인 실패');
     }
   };
 

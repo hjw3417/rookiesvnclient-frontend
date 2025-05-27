@@ -1,0 +1,55 @@
+.projectLookupBox {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 14px 12px 10px 12px;
+  margin-bottom: 16px;
+  min-width: 180px;
+  max-width: 260px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.projectLookupTitle {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.projectCheckboxList {
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.projectCheckboxItem {
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin-bottom: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  border: 1px solid #e3e6ea;
+  transition: all 0.18s;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.projectCheckboxItemChecked {
+  border: 1.5px solid #0d6efd;
+  background: #f0f6ff;
+}
+
+.projectCheckboxItemHover {
+  background: #f5f7fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+}
+
+.projectCheckboxLabel {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 0;
+  flex: 1;
+} 

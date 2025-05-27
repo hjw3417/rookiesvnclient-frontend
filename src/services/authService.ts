@@ -1,4 +1,4 @@
-import { loginApi } from '../api/authApi';
+import { loginApi, LoginResponse } from '../api/authApi';
 
 export const login = async (username: string, password: string): Promise<string> => {
   const response = await loginApi(username, password);
